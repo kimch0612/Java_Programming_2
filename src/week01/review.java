@@ -28,6 +28,7 @@ continue break
 
 /*
  * abstract class Person { } 추상클래스
- * abstract void disp(); 추상메소드
+ * abstract public void disp(); 추상메소드
  * 추상메소드가 하나라도 있는 클래스는 추상메소드가 됨
+ * public void disp() { System.out.println("Hi!"); }
  */
