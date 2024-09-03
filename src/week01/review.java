@@ -22,3 +22,6 @@ for while do=while for-each
 제어키워드
 continue break
 */
+
+// 클래스와 객체?
+// 클래스는 하나의 틀 (붕어빵 기계)이며, 객체는 틀을 이용해서 만들어낸 요소 (붕어빵)이다.
