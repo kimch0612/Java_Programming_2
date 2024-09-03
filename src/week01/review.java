@@ -27,7 +27,7 @@ continue break
 // 클래스는 하나의 틀 (붕어빵 기계)이며, 객체는 틀을 이용해서 만들어낸 요소 (붕어빵)이다.
 
 /*
- * abstract class Person { } 
+ * abstract class Person { } 추상클래스
  * abstract void disp(); 추상메소드
  * 추상메소드가 하나라도 있는 클래스는 추상메소드가 됨
  */
