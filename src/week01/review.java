@@ -28,7 +28,11 @@ continue break
 
 /*
  * abstract class Person { } 추상클래스
- * abstract public void disp(); 추상메소드
+ * abstract public void disp(); 추상메소드 (불완전)
  * 추상메소드가 하나라도 있는 클래스는 추상메소드가 됨
  * public void disp() { System.out.println("Hi!"); }
+ * 불완전->완전으로 하는 것이 '구현'임
+ * 1. 추상 클래스에 추상메소드가 있는 경우 -> 하위클래스에서 구현
+ * 2. 인터페이스 내의 추상메소드가 있는 경우 -> 하위클래스에서 구현
+ * 추상메소드가 모여있는 것이 인터페이스임?
  */
