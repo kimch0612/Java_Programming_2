@@ -12,10 +12,12 @@ class A {
 
     class B {
         void bcd() {
+            // 1. outer class 필드 사용
             System.out.println("a");
             System.out.println("b");
             System.out.println("c");
             System.out.println("d");
+            // 2. outer class 메소드 사용
             abc();
         }
     }
@@ -23,7 +25,11 @@ class A {
 
 public class InnerClass1Main {
     public static void main(String[] args) {
+        // 3. instance inner class 객체 생성
+        // 3.1 outer class 객체 생성
         A a = new A();
+
+        // 3.1 outer 참조 변수로부터 inner 클래스 객체 생성
         A.B b = a.new B();
         b.bcd();
     }
