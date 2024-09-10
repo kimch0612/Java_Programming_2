@@ -13,7 +13,6 @@ public class Product {
     }
 
     public class TaxCalc {
-        private double tax;
         public static final int KOREA = 1;
         public static final int USA = 2;
         public static final int FR = 3;
