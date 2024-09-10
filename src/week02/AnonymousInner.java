@@ -15,6 +15,7 @@ public class AnonymousInner {
         // ifA ifa = new ifA(); 사용 불가능함
         // ifA ifa = new ifClass(); 첫번째 방법
         ifA ifa = new ifA() { // 두번째 방법
+            @Override
             public void print() {}
         };
         ifa.print();
