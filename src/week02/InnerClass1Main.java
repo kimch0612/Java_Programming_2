@@ -33,7 +33,7 @@ class A {
         void bcd() {
             System.out.println(a);
             System.out.println(b);
-            System.out.println(A.this.a);
+            System.out.println(A.this.a); // outer class의 것을 사용하고 싶다면 클래스이름.this를 붙이면 됨
             System.out.println(A.this.b);
             A.this.abc();
         }
