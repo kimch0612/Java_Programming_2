@@ -13,10 +13,10 @@ class A {
     class B {
         void bcd() {
             // 1. outer class 필드 사용
-            System.out.println("a");
-            System.out.println("b");
-            System.out.println("c");
-            System.out.println("d");
+            System.out.println(a);
+            System.out.println(b);
+            System.out.println(c);
+            System.out.println(d);
             // 2. outer class 메소드 사용
             abc();
         }
@@ -32,5 +32,10 @@ public class InnerClass1Main {
         // 3.1 outer 참조 변수로부터 inner 클래스 객체 생성
         A.B b = a.new B();
         b.bcd();
+
+        System.out.println(a.a);
+        System.out.println(a.b);
+        System.out.println(a.c);
+        // System.out.println(a.d); private이므로 오류 발생
     }
 }
