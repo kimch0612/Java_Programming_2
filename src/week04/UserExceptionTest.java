@@ -33,7 +33,8 @@ public class UserExceptionTest {
     public static void main(String[] args) {
         Checking ch = new Checking();
         try {
-            ch.checkScore(101);
+            ch.checkScore(10);
+            ch.checkScore(-50);
         } catch (MinusException | OverException e) {
             e.printStackTrace();
         } 
