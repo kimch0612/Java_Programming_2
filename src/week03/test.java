@@ -1,6 +1,7 @@
 package week03;
 
 import java.io.InputStreamReader;
+import java.io.IOException;
 
 public class test {
     public static void main(String[] args) {
@@ -13,19 +14,12 @@ public class test {
         // finally {
         //     System.out.println("종료합니다.");
         // }
-        try {
-            is = new InputStreamReader(System.in);
+        try (InputStreamReader is = new InputStreamReader(System.in);) {
             System.out.println(is.read());
         } catch (IOException e) {
             System.out.println("Hi");
         } finally {
-            if (is != null) {
-                try {
-                    is.close();
-                } catch (IOException e) {
-                    System.out.println("Hello");
-                }
-            }
+            System.out.println("Hello");
         }
     }
 }
