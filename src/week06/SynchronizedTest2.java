@@ -16,7 +16,7 @@ class mydata {
     }
 
     void cde() {
-        synchronized (this) {
+        synchronized (new Object()) {
             for (int i=0; i<3; i++) {
                 System.out.println(i + "번째");
                 try { Thread.sleep(500); } catch (InterruptedException e) {}
