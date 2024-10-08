@@ -27,13 +27,13 @@
 
 //         Thread plusThread1 = new PlusThread(myData);
 //         plusThread1.setName("plusThread1");
-//         plusThread1.start();
+//         plusThread1.start(); // plusThread1 실행 결과: 4
 
 //         try { Thread.sleep(1000); } catch (InterruptedException e) {}
 
 //         Thread plusThread2 = new PlusThread(myData);
 //         plusThread2.setName("plusThread2");
-//         plusThread2.start();
+//         plusThread2.start(); // plusThread2 실행 결과: 4
 //     }
 // }
 
