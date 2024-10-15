@@ -37,5 +37,8 @@ public class GenericTest01 {
         Goods2 gs2 = new Goods2();
         gs2.setPencil(new Pencil());
         Pencil pn = gs2.getPencil();
+
+        // Goods1 gs3 = new Goods1();
+        // gs3.setApple("강아지");
     }
 }
