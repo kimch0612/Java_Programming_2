@@ -16,6 +16,9 @@ class GenericM{
 
 public class GenericMethod {
     public static void main(String[] args) {
-        
+        GenericM gm = new GenericM();
+        String str1 = gm.<String>method1("Hello");
+        String str2 = gm.method1("Hello"); // t타입의 자료형에 맞춰서 String이 자동으로 들어감
+        int num1 = gm.method1(100);
     }
 }
