@@ -15,11 +15,11 @@ class Goods<T>{
   }
 }
 
-class Test {
-    void method1(Goods<A> g) {} //#case1
-    void method2(Goods<?> g) {} //#case2
+class Test { // 메소드 매개변수의 타입제한 예제
+    void method1(Goods<A> g) {} //#case1 변수 g의 타입은 클래스 A만 가능하다
+    void method2(Goods<?> g) {} //#case2 변수 g의 타입은 a b c d 모두 가능하다
     void method3(Goods<? extends B> g) {} //#case3
-    void method4(Goods<? super B> g) {} //#case4
+    void method4(Goods<? super B> g) {} //#case4 B도 되고 A도 가능
   }
   
 
