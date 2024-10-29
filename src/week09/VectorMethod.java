@@ -22,6 +22,5 @@ public class VectorMethod {
         vector2.add(2);
         vector2.addAll(vector1);
         System.out.println(vector2); //[1, 2, 3, 6, 4, 5]
-   
     }
 }
