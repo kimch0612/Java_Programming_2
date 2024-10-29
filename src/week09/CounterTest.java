@@ -2,7 +2,7 @@ package week09;
 
 class Counter {
     private int count = 0;
-    void increment() { count += 1; }
+    public void increment() { count += 1; }
     public int getCount() { return count; }
 }
 
