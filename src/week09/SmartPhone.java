@@ -2,6 +2,9 @@ package week09;
 
 public class SmartPhone {
     private Battery battery;
+    public SmartPhone() {
+        battery = new Battery();
+    }
     public void runSmartPhone() {
         battery.startConsume();
     }
@@ -10,7 +13,6 @@ public class SmartPhone {
             System.out.println("배터리 소모 시작");
         }
     }
-    
     public static void main(String[] args) {
         SmartPhone myBattery = new SmartPhone();
         myBattery.runSmartPhone();
