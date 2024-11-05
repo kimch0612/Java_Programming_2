@@ -21,7 +21,7 @@ public class StudentManager {
             return;
         }
         for (Student s : stdList) {
-            System.out.println(s.getName());
+            System.out.println(s.toString());
         }
     }
     public void searchStudent(String stdId) {
