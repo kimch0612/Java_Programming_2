@@ -12,5 +12,6 @@ public class setTest {
         setStuff.add("Mouser");
         setStuff.add("USB");
         System.out.println("setStuff 요소의 개수: " + setStuff.size());
+        System.out.println(setStuff);
     }
 }
