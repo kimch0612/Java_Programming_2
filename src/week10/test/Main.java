@@ -2,7 +2,11 @@ package week10.test;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println();
         StudentManager manager = new StudentManager();
+        
+        manager.displayAllStudents(); System.out.println("-".repeat(20));
+  
   // 학생 추가
         manager.addStudent(new Student("2023001", "철수", "컴퓨터소프트웨어학과"));
         manager.addStudent(new Student("2023002", "영희", "수학과"));

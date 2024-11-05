@@ -16,6 +16,10 @@ public class StudentManager {
         }
     }
     public void displayAllStudents() {
+        if (stdList.isEmpty()){
+            System.out.println("학생 목록이 비어있습니다.");
+            return;
+        }
         for (Student s : stdList) {
             System.out.println(s.getName());
         }
