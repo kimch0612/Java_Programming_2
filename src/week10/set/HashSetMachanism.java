@@ -1,12 +1,22 @@
 package week10.set;
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 class AA {
     int data;
     public AA(int data) {this.data = data;}
-
+    public int hashCode() {
+        return Objects.hash(data);
+    }
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null) return false;
+        if (getClass() != obj.getClass()) return false;
+        AA other = (AA) obj;
+        return data == other.data;
+    }
 }
 
 public class HashSetMachanism {
@@ -18,6 +28,6 @@ public class HashSetMachanism {
         System.out.println(a1.equals(a2)); // 최상위 클래스인 Object 클래스의 equals()를 호출해서 사용하는건데, 사실상 '=='와 동일하게 작동함.
         System.out.println(a1.hashCode() + " :: " + a2.hashCode()); // 서로 값이 다름
         aSet.add(a1); aSet.add(a2);
-        System.out.println(aSet.size());
+        System.out.println(aSet.size()); // 서로 다르게 인식하므로 2개라고 나옴
     }
 }
