@@ -29,5 +29,12 @@ public class HashSetMachanism {
         System.out.println(a1.hashCode() + " :: " + a2.hashCode()); // 서로 값이 다름
         aSet.add(a1); aSet.add(a2);
         System.out.println(aSet.size()); // 서로 다르게 인식하므로 2개라고 나옴
+        /*
+         * 이후 AA 클래스에서 hashcode와 equals 함수를 재정의해서 다음과 같은 결과물이 출력 됨
+         * false
+         * true
+         * 36 :: 36
+         * 1
+        */
     }
 }
