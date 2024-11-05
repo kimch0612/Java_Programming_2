@@ -9,9 +9,10 @@ public class setTest {
         setStuff.add("Book");
         setStuff.add("Monitor");
         setStuff.add("Computer");
-        setStuff.add("Mouser");
+        setStuff.add("Mouse");
         setStuff.add("USB");
+        setStuff.add("USB"); // 중복 허용 안 됨
         System.out.println("setStuff 요소의 개수: " + setStuff.size());
-        System.out.println(setStuff);
+        System.out.println(setStuff); // 입력한 순서와 출력되는 순서가 다름
     }
 }
