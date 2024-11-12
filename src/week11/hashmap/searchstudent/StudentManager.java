@@ -8,10 +8,16 @@ public class StudentManager {
 
     public void addStudent(Student std) {
         StdHashMap.put(std.getId(), std);
+        System.out.println(std + " 추가 성공");
     }
 
-    public Student getStudentById(String id) {
-        return StdHashMap.get(id);
+    public void getStudentById(String id) {
+        Student std = StdHashMap.get(id);
+        if (std != null) {
+            System.out.println(std + " 검색 성공");
+        } else {
+            System.out.println(std + " 검색 실패");
+        }
     }
 
     public void displayAllStudents() {
