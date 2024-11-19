@@ -20,18 +20,12 @@ public class LambdaTest1 {
     public static void main(String[] args) {
         A a = () -> System.out.println("Method1");
         B b = aa -> System.out.println(aa);
-        C c = () -> {
-            System.out.println("무입력 출력");
-            return 42;
-        };
-        D d = (aaa, bbb) -> {
-            System.out.println(aaa + " " + bbb);
-            return aaa + bbb;
-        };
+        C c = () -> 42;
+        D d = (aaa, bbb) -> aaa + bbb;
 
         a.method1();
         b.method2(10);
-        c.method3();
-        d.method4(10000000, 20000000);
+        System.out.println(c.method3());
+        System.out.println(d.method4(10000000, 20000000));
     }
 }
