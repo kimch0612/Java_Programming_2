@@ -19,6 +19,6 @@ public class AnimalMain {
         Animal dog = () -> System.out.println("멍멍"); dog.cry();
 
         Maxible max = (a, b) -> a>b ? a:b;
-        max.
+        max.max(1, 2);
     }
 }
