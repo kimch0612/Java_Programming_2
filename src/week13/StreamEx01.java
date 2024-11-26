@@ -19,6 +19,6 @@ public class StreamEx01 {
                                       .limit(2);
         long total = stream.count(); // 최종연산
         System.out.println(total);
-        stream.forEach(System.out::println);
+        // stream.forEach(System.out::println);
     }
 }
