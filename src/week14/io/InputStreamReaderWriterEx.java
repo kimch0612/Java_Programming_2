@@ -10,9 +10,10 @@ public class InputStreamReaderWriterEx {
 	public static void main(String[] args) {
 //		OutputStreamWriter로 파일 쓰기
         String data = "안녕하세요, OutputStreamWriter 예제입니다.";
-
+// 파일 객체 생성, 파일아웃풋스트림 객체 생성, 아웃풋스트림라이터 객ㅊㅔ 생성
         try (OutputStreamWriter writer = new OutputStreamWriter(
-                new FileOutputStream("c:/test/outputsrw.txt"), "MS949")) { // MS949로 저장
+                new FileOutputStream
+                ("c:/test/outputsrw.txt"), "MS949")) { // MS949로 저장
             writer.write(data); // 문자열 데이터를 쓰기
             writer.flush(); // 버퍼 비우기
         } catch (IOException e) {
