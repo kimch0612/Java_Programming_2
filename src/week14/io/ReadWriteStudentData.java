@@ -2,14 +2,19 @@ package week14.io;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class ReadWriteStudentData {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException{
 		Student student = new Student(1, "Alice", 95.5);
-
+// 1. File 객체 생성 ("student.dat")
+		File file = new File("/nas/std.dat");
+// 2. FileOutputStream 객체 생성
+		FileOutputStream fos = new FileOutputStream(file);
+// 3. DataOutputStream 객체 생성
 		try (DataOutputStream dos = new DataOutputStream(new FileOutputStream("student.dat"))) {
 			dos.writeInt(student.id);
 			dos.writeUTF(student.name);
