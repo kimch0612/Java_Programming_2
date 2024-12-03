@@ -20,24 +20,36 @@ public class Main {
 			int choice = scanner.nextInt();
 			scanner.nextLine(); // 버퍼 비우기
 
+			// switch (choice) {
+			// case 1:
+			// 	sm.addStudent();
+			// 	break;
+			// case 2:
+			// 	sm.searchStudent();
+			// 	break;
+			// case 3:
+			// 	sm.printAllStudents();
+			// 	break;
+			// case 4:
+			// 	sm.updateStudent();
+			// 	break;
+			// case 5:
+			// 	System.out.println("프로그램을 종료합니다.");
+			// 	return;
+			// default:
+			// 	System.out.println("잘못된 입력입니다. 다시 시도하세요.");
+			// }
+
 			switch (choice) {
-			case 1:
-				sm.addStudent();
-				break;
-			case 2:
-				sm.searchStudent();
-				break;
-			case 3:
-				sm.printAllStudents();
-				break;
-			case 4:
-				sm.updateStudent();
-				break;
-			case 5:
-				System.out.println("프로그램을 종료합니다.");
-				return;
-			default:
-				System.out.println("잘못된 입력입니다. 다시 시도하세요.");
+				case 1 -> sm.addStudent();
+				case 2 -> sm.searchStudent();
+				case 3 -> sm.printAllStudents();
+				case 4 -> sm.updateStudent();
+				case 5 -> {
+					System.out.println("프로그램을 종료합니다");
+					return;
+				}
+				default -> System.out.println("잘못된 입력입니다. 다시 시도하세요.");
 			}
 		}
 	}
